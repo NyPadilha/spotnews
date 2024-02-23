@@ -11,7 +11,7 @@
 
 {% block content %}
 <div class="news-details">
-    <h1>{{ news.title }}</h1>
+    <h1 class="news-title">{{ news.title }}</h1>
     <p class="news-content">{{ news.content }}</p>
     {% for category in news.categories.all %}
     <span class="news-categories">{{category.name}}</span>
