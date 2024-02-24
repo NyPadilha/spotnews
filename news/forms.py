@@ -25,7 +25,7 @@ class CreateNewsForm(forms.ModelForm):
             "content": "Conteúdo",
             "author": "Autoria",
             "created_at": "Criado em",
-            "image": "URL da imagem",
+            "image": "URL da Imagem",
         }
         widgets = {
             "author": forms.Select,
