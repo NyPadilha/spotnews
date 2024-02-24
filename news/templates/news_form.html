@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}Formulário para Nova Notícia{% endblock %}
+
+
+{% block header-links %}
+<li><a href="{% url 'home-page' %}">Home</a></li>
+<li><a href="{% url 'categories-form' %}">Cadastrar Categorias</a></li>
+<li><a href="{% url 'news-form' %}">Cadastrar Notícias</a></li>
+{% endblock %}
+
+{% block content %}
+<form action="{% url 'news-form' %}" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Salvar</button>
+</form>
+{% endblock %}
