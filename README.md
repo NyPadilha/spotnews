@@ -1,4 +1,3 @@
-============================= Readme.md =============================
 # :construction: CSS not Finished :construction:
 
 # ProjectName (Trybe Project)
